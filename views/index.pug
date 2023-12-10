@@ -1,0 +1,23 @@
+
+html
+  head
+    title My Express App
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet", href="/bootstrap/css/bootstrap.min.css")
+  body    
+    .container
+      .row
+        .col-sm-12
+          h1 String Matching
+          br
+          p
+            | Enter a string:
+          form(method='post')
+            input.form-control(type='text' name='string_text' required)
+            br
+            button.btn.btn-primary(type='submit') Find
+          p
+            | #{message}
+          script(src="/popper/popper.min.js")
+          script(src="/bootstrap/js/bootstrap.min.js")
+    
